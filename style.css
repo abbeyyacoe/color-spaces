@@ -1,20 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
-body{
-  background-color: rgb(0,0,0);
+
+body {
+  background-color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 6%;
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  max-width: 75vw;
-  display: block;
-  margin: auto;
-}
-
 h1 {
   text-align: left;
-  font-family: "Roboto", sans-serif;
   font-size: 100px;
 }
 
@@ -24,39 +18,51 @@ p {
   max-width: 50%;
 }
 
-.title {
-  margin: 0px;
-  line-height: 1;
-}
-fieldset{
+fieldset {
   border: none;
   display: block;
 }
-output{
+
+output {
   display: inline-block;
   min-width: 1.3em;
 }
-label, output{
+
+label, output {
   padding: 2px 9px;
   border-radius: 3px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
 }
+
 input[type=range] {
   width: 300px;
 }
-label[for=r], output[for=r]{
+
+label[for=r], output[for=r] {
   background-color: #f00;
 }
-label[for=g], output[for=g]{
+
+label[for=g], output[for=g] {
   background-color: #0f0;
 }
-label[for=b], output[for=b]{
+
+label[for=b], output[for=b] {
   background-color: #00f;
 }
 
+.container {
+  max-width: 75vw;
+  display: block;
+  margin: auto;
+}
 
-.hex_values{
+.title {
+  margin: 0px;
+  line-height: 1;
+}
+
+.hex_values {
   font-size: 150px;
   margin: 10px;
   font-family: sans-serif;
@@ -76,19 +82,19 @@ p.hex_values {
 }
 
 /* Slider CSS */
-
 .slider {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 10rem;
   height: 0.25rem;
   outline: none;
   border-radius: 0.25rem;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 1.5rem;
   height: 1.5rem;
   background-color: white;
@@ -98,9 +104,9 @@ p.hex_values {
 }
 
 .hashtag {
-    position: relative;
-    top: -135px;
-    left: 31px;
-    font-weight: 800;
-    padding-top: 0px !important;
+  position: relative;
+  top: -135px;
+  left: 31px;
+  font-weight: 800;
+  padding-top: 0px !important;
 }
