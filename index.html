@@ -4,30 +4,45 @@
 	<title></title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="reverse_value">
+
+<div class="container">
+	<h1 class="reverse_value title">Hexadecimal Color Codes</h1>
+		<p>We write color codes using the hexadecimal number system, a 16-bit number system that uses two characters (letters or numbers) ranging from 00-FF. Hex color codes consist of three groups of values representing the values red, green and blue. Each color group can produce 256 different colors, and when combined, a total of 16,777,216 colors.</p>
+
+		<p>Try creating a red value by moving the red bar to the right. See how the values change as the slider moves. Repeat this with the green and blue sliders to create the colors green and blue.</p>
+
+		<p>We create grayscales by placing each slider in the same position on each bar. Purple is a combination of red and blue, and yellow of red and green. Can you find orange and pink?</p>
+		<br/>
+
+	<!-- Red Output -->
+	<div class="color_block">
+
+		<output id="" class="hex_values hashtag">#</output>
 
 
-	<h1> Input here </h1>
-		<p>Insert new feature</p>
-		<p>Feature number two here</p>
-
+	</div>
 	<!-- Red Output -->
 	<div class="color_block">
 
 		<output id="final_hexVal_r" class="hex_values">00</output>
 
+
 		<fieldset>
 		  <input type="range" class="slider" min="0" max="255" id="r" step="1" value="0">
 		</fieldset>
+		<p class="hex_values">Red</p>
 	</div>
 
 	<!--  Green Output  -->
 	<div class="color_block">
 		<output id="final_hexVal_g" class="hex_values">00</output>
 
+
 		<fieldset>
 		  <input type="range" class="slider" min="0" max="255" id="g" step="1" value="0">
 		</fieldset>
+		<p class="hex_values">Green</p>
 	</div>
 
 
@@ -35,12 +50,14 @@
 	<div class="color_block">
 		<output id="final_hexVal_b" class="hex_values">00</output>
 
+
 		<fieldset>
 		  <input type="range" class="slider" min="0" max="255" id="b" step="1" value="0">
 		</fieldset>
+		<p class="hex_values">Blue</p>
 	</div>
 
-
+</div>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

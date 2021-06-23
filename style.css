@@ -2,8 +2,31 @@
 body{
   background-color: rgb(0,0,0);
   text-align: center;
-  padding: 40px 0 0 0;
-  margin-top: 15%;
+  margin-top: 6%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 75vw;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+}
+
+p {
+  text-align: left;
+  font-size: 18px;
+  max-width: 50%;
+}
+
+.title {
+  margin: 0px;
+  line-height: 1;
 }
 fieldset{
   border: none;
@@ -17,11 +40,10 @@ label, output{
   padding: 2px 9px;
   border-radius: 3px;
   font-family: 'Roboto', sans-serif;
-  color: #000;
   font-size: 1.1em;
 }
 input[type=range] {
-  width: 200px;
+  width: 300px;
 }
 label[for=r], output[for=r]{
   background-color: #f00;
@@ -32,38 +54,25 @@ label[for=g], output[for=g]{
 label[for=b], output[for=b]{
   background-color: #00f;
 }
-#hexVal{
-  margin-top: 25px;
-  min-width: 4.5em;
-  font-size: 3em;
-  background: rgba(255,255,255,.3);
-}
+
 
 .hex_values{
-  color: white;
-  font-size: 100px;
+  font-size: 150px;
   margin: 10px;
+  font-family: sans-serif;
+  font-weight: 800;
 }
 
-#final_hexVal_r {
-  border-bottom: 5px solid red;
-}
-
-#final_hexVal_g {
-  border-bottom: 5px solid green;
-}
-
-#final_hexVal_b {
-  border-bottom: 5px solid blue;
+p.hex_values {
+  font-size: 35px;
+  padding-top: 20px;
 }
 
 .color_block {
   display: inline-block !important;
   max-width: 33%;
-}
-
-.color_label {
-  color: white;
+  position: relative;
+  left: -50px;
 }
 
 /* Slider CSS */
@@ -86,4 +95,12 @@ label[for=b], output[for=b]{
   border: 0.25rem solid #fff;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+.hashtag {
+    position: relative;
+    top: -135px;
+    left: 31px;
+    font-weight: 800;
+    padding-top: 0px !important;
 }

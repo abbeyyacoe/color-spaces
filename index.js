@@ -9,6 +9,8 @@ var body = document.body,
     rhexVal_out = document.querySelector('#final_hexVal_r');
     ghexVal_out = document.querySelector('#final_hexVal_g');
     bhexVal_out = document.querySelector('#final_hexVal_b');
+    reverse_value = document.querySelector('.reverse_value');
+    body.style.color = "#ffffff";
 
 function setColor(){
   var r_hexVal = parseInt(r.value, 10).toString(16),
@@ -28,6 +30,7 @@ function setColor(){
       reverse_hexVal_b = pad(reverse_b);
 
       body.style.backgroundColor = "#" + final_hexVal_r + final_hexVal_g + final_hexVal_b;
+      reverse_value.style.color = "#" + reverse_hexVal_r + reverse_hexVal_g + reverse_hexVal_b;
       rhexVal_out.value = final_hexVal_r;
       ghexVal_out.value = final_hexVal_g;
       bhexVal_out.value = final_hexVal_b;
