@@ -19,7 +19,7 @@ p {
   padding-top: 10px;
   text-align: left;
   font-size: 18px;
-  max-width: 50%;
+  max-width: 800px;
   font-family: 'PT Mono', monospace;
 }
 
@@ -67,20 +67,20 @@ label[for=b], output[for=b] {
   line-height: 1;
 }
 
-.hex_values {
+.hex-values {
   font-size: 150px;
   margin: 10px;
   font-weight: 800;
 }
 
-p.hex_values {
+p.hex-values {
   font-size: 35px;
   padding-top: 20px;
 }
 
-.color_block {
+.color-block {
   display: inline-block !important;
-  max-width: 33%;
+  /*max-width: 33%  ;*/
   position: relative;
   left: -50px;
 }
@@ -114,3 +114,66 @@ p.hex_values {
   font-weight: 800;
   padding-top: 0px !important;
 }
+
+@media only screen and (max-width: 1600px) {
+  .color-block {
+    max-width: 23%;
+  }
+
+  input[type=range] {
+    width: 200px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 85vw;
+  }
+
+  input[type=range] {
+    width: 200px;
+  }
+
+  .hex-values {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    max-width: 95vw;
+  }
+  .hashtag {
+    left: 0;
+  }
+    input[type=range] {
+    width: 140px;
+  }
+  .hex-values {
+    font-size: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    max-width: 95vw;
+  }
+  .hashtag {
+    left: 0;
+  }
+
+    input[type=range] {
+    width: 80px;
+  }
+  .hex-values {
+    font-size: 70px;
+  }
+  .hashtag {
+    font-size: 100px;
+    top: -109px;
+  }
+}
+
+
