@@ -1,9 +1,9 @@
 // Code By Webdevtrick ( https://webdevtrick.com )
 var body = document.body,
-    rhexVal_out = document.querySelector('#final_hexVal_r');
-    ghexVal_out = document.querySelector('#final_hexVal_g');
-    bhexVal_out = document.querySelector('#final_hexVal_b');
-    reverse_value = document.querySelector('.reverse_value');
+    rhexVal_out = document.querySelector('#final-hexVal-r');
+    ghexVal_out = document.querySelector('#final-hexVal-g');
+    bhexVal_out = document.querySelector('#final-hexVal-b');
+    reverse_value = document.querySelector('.reverse-value');
     body.style.color = "#ffffff";
 
 function setColor(){
